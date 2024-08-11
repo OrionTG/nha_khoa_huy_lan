@@ -3,7 +3,7 @@
 First, run the development server:
 
 ```bash
-npm íntall
+npm install
 
 
 npm run dev
