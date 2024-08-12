@@ -28,24 +28,24 @@ export default function App() {
           />
           <NavbarBrand>
             <AcmeLogo />
-            <p className="font-bold text-inherit">ACME</p>
+            <p className="font-bold text-inherit">Huy Lan Dental</p>
           </NavbarBrand>
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
             <Link color="foreground" href="#">
-              Features
-            </Link>
-          </NavbarItem>
-          <NavbarItem isActive>
-            <Link href="#" aria-current="page">
-              Customers
+              Trang chủ
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#">
-              Integrations
+              Bảng giá
+            </Link>
+          </NavbarItem>
+          <NavbarItem>
+            <Link color="foreground" href="#">
+              Liên hệ
             </Link>
           </NavbarItem>
         </NavbarContent>
@@ -54,8 +54,8 @@ export default function App() {
             <Link href="#"></Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
-              Sign Up
+            <Button as={Link} href="#" radius="full" className="relative overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0">
+              Đặt lịch ngay
             </Button>
           </NavbarItem>
         </NavbarContent>
