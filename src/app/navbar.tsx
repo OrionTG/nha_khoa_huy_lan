@@ -1,8 +1,8 @@
 'use client'
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-import {AcmeLogo} from "../app/AcmeLogo.jsx";
-import FormBooking from "../app/FormBooking.jsx";
+import {AcmeLogo} from "./AcmeLogo.jsx";
+import FormBooking from "./FormBooking.jsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
