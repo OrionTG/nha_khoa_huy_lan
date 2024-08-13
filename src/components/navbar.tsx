@@ -1,22 +1,16 @@
 'use client'
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
-import {AcmeLogo} from "./AcmeLogo.jsx";
+import {AcmeLogo} from "../app/AcmeLogo.jsx";
+import FormBooking from "../app/FormBooking.jsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "Trang chủ",
+    "Bảng giá",
+    "Liên hệ",
   ];
 
   return (
@@ -54,18 +48,14 @@ export default function App() {
             <Link href="#"></Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} href="#" radius="full" className="relative overflow-visible rounded-full hover:-translate-y-1 px-12 shadow-xl bg-background/30 after:content-[''] after:absolute after:rounded-full after:inset-0 after:bg-background/40 after:z-[-1] after:transition after:!duration-500 hover:after:scale-150 hover:after:opacity-0">
-              Đặt lịch ngay
-            </Button>
+            <FormBooking />
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu>
           {menuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
-                    color={
-                      index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                    }
+                    color="foreground"
                     className="w-full"
                     href="#"
                     size="lg"
